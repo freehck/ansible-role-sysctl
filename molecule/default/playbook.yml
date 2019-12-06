@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  roles:
+    - role: freehck.sysctl
+      sysctl_opt_name: "net.ipv4.ip_forward"
+      sysctl_opt_value: "0"

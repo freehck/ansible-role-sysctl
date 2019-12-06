@@ -1,6 +1,6 @@
 ---
 
-- name: "set sysctl option {{ sysctl_opt_name }}={{sysctl_opt_value }}"
+- name: "set sysctl option {{ sysctl_opt_name }}={{ sysctl_opt_value }}"
   sysctl:
     name: "{{ sysctl_opt_name }}"
     value: "{{ sysctl_opt_value }}"
