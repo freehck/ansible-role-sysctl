@@ -1,0 +1,7 @@
+---
+
+# sysctl_opt_name: ""
+# sysctl_opt_value: ""
+sysctl_opt_state: present  # absent
+sysctl_write: true
+sysctl_apply: true

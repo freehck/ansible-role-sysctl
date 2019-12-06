@@ -1,0 +1,9 @@
+---
+
+- name: "set sysctl option {{ sysctl_opt_name }}={{sysctl_opt_value }}"
+  sysctl:
+    name: "{{ sysctl_opt_name }}"
+    value: "{{ sysctl_opt_value }}"
+    state: "{{ sysctl_opt_state }}"
+    sysctl_set: "{{ sysctl_write }}"
+    reload: "{{ sysctl_apply }}"
